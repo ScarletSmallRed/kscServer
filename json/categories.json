@@ -1,0 +1,92 @@
+{
+    categories: [
+        {
+            "_id" : "5a27c6c0033f2b412f5caf5a",
+            "name" : "本店推荐",
+            "name_english" : "Our recommendation",
+            "createDate" : "2017-12-06T10:30:24.790Z",
+            "_restaurant" : "5a1f9d0a9d8459cd0693acfb",
+            "seq" : 1,
+            "separatCategory" : [],
+            "__v" : 0,
+            "showName" : "本店推荐"
+        },
+        {
+            "_id" : "5a1f9dd89d8459cd0693acff",
+            "name" : "蔬菜",
+            "name_english" : "Vegetable",
+            "createDate" : "2017-11-30T05:57:44.688Z",
+            "_restaurant" : "5a1f9d0a9d8459cd0693acfb",
+            "seq" : 2,
+            "separatCategory" : [],
+            "__v" : 0,
+            "showName" : "蔬菜"
+        },
+        {
+            "_id" : "5a27a392033f2b412f5cae7b",
+            "name" : "肉类",
+            "name_english" : "Meat",
+            "createDate" : "2017-12-06T08:00:18.562Z",
+            "_restaurant" : "5a1f9d0a9d8459cd0693acfb",
+            "seq" : 3,
+            "separatCategory" : [],
+            "__v" : 0,
+            "showName" : "肉类"
+        }, 
+        {
+            "_id" : "5a27a3b1033f2b412f5cae7c",
+            "name" : "配菜",
+            "name_english" : "Garnish",
+            "createDate" : "2017-12-06T08:00:49.371Z",
+            "_restaurant" : "5a1f9d0a9d8459cd0693acfb",
+            "seq" : 4,
+            "separatCategory" : [],
+            "__v" : 0,
+            "showName" : "配菜"
+        },
+        {
+            "_id" : "5a7bb1cfdf3b2397630f10e0",
+            "name" : "丸子组合",
+            "name_english" : "Balls",
+            "createDate" : "2018-02-08T02:11:27.456Z",
+            "_restaurant" : "5a1f9d0a9d8459cd0693acfb",
+            "seq" : 999,
+            "separatCategory" : [],
+            "__v" : 0,
+            "showName" : "丸子组合"
+        },
+        {
+            "_id" : "5a7bb1dbdf3b2397630f10e1",
+            "name" : "海鲜",
+            "name_english" : "Seafood",
+            "createDate" : "2018-02-08T02:11:39.862Z",
+            "_restaurant" : "5a1f9d0a9d8459cd0693acfb",
+            "seq" : 999,
+            "separatCategory" : [],
+            "__v" : 0,
+            "showName" : "海鲜"
+        },
+        {
+            "_id" : "5a7bb1eddf3b2397630f10e2",
+            "name" : "小吃类",
+            "name_english" : "Snack",
+            "createDate" : "2018-02-08T02:11:57.617Z",
+            "_restaurant" : "5a1f9d0a9d8459cd0693acfb",
+            "seq" : 999,
+            "separatCategory" : [],
+            "__v" : 0,
+            "showName" : "小吃类"
+        },
+        {
+            "_id" : "5a7bb1f9df3b2397630f10e3",
+            "name" : "自选类",
+            "name_english" : "Optional",
+            "createDate" : "2018-02-08T02:12:09.013Z",
+            "_restaurant" : "5a1f9d0a9d8459cd0693acfb",
+            "seq" : 999,
+            "separatCategory" : [],
+            "__v" : 0,
+            "showName" : "自选类"
+        }
+    ]
+}

@@ -1,0 +1,35 @@
+{
+  "name": "白萝卜",
+  "price": 10,
+  "categories": "蔬菜"
+}
+{
+  "name": "猪肉",
+  "price": 10,
+  "categories": "肉类"
+}
+{
+  "name": "豆皮",
+  "price": 10,
+  "categories": "配菜"
+}
+{
+  "name": "鱼丸",
+  "price": 10,
+  "categories": "丸子组合"
+}
+{
+  "name": "青虾",
+  "price": 10,
+  "categories": "海鲜"
+}
+{
+  "name": "法式蛋糕",
+  "price": 10,
+  "categories": "小吃类"
+}
+{
+  "name": "日本黄瓜条",
+  "price": 10,
+  "categories": "蔬菜"
+}
