@@ -33,7 +33,7 @@ router.get('/list', function (req, res, next) {
             name: search
         }
     } else {
-        if (category != 'all') {
+        if (category != '全部') {
             params = {
                 categories: category
             }
@@ -60,4 +60,76 @@ router.get('/list', function (req, res, next) {
                 })
             }
         })
+})
+
+router.post('/addCart', function (req, res, next) {
+    var userId = '10086'
+    var productName = req.body.productName
+
+    var User = require('../models/users')
+    User.findOne({userId: userId}, function (err, userDoc) {
+        if (err) {
+            res.json({
+                status: "1",
+                msg: err.message
+            })
+        } else {
+            if(userDoc){
+                var goodsItem = '';
+                userDoc.cartList.forEach(function (item) {
+                    if(item.name == productName){
+                        goodsItem = item;
+                        item.num ++;
+                    }
+                });
+                if(goodsItem){
+                    userDoc.save(function (err2,doc2) {
+                        if(err2){
+                            res.json({
+                                status:"1",
+                                msg:err2.message
+                            })
+                        }else{
+                            res.json({
+                                status:'0',
+                                msg:'',
+                                result:'suc'
+                            })
+                        }
+                    })
+                }else{
+                    Products.findOne({name: productName}, function (err1,doc) {
+                        console.log('##########')
+                        console.log(doc)
+                        if(err1){
+                            res.json({
+                                status:"1",
+                                msg:err1.message
+                            })
+                        }else{
+                            if(doc){
+                                doc.num = 1;
+                                doc.checked = '1';
+                                userDoc.cartList.push(doc);
+                                userDoc.save(function (err2,doc2) {
+                                    if(err2){
+                                        res.json({
+                                            status:"1",
+                                            msg:err2.message
+                                        })
+                                    }else{
+                                        res.json({
+                                            status:'0',
+                                            msg:'',
+                                            result:'suc'
+                                        })
+                                    }
+                                })
+                            }
+                        }
+                    });
+                }
+            }
+        }
+    })
 })

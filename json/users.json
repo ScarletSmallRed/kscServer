@@ -1,0 +1,23 @@
+{
+  "userId": "10086",
+  "userName": "user1",
+  "userPwd": "123456",
+  "orderList": [],
+  "cartList": [
+    {
+      "name": "鱼丸",
+      "price": 14,
+      "categories": "丸子组合",
+      "num": 10,
+      "checked": "1"
+    },
+    {
+      "name": "白萝卜",
+      "price": 10,
+      "categories": "蔬菜",
+      "num": 12,
+      "checked": "1"
+    }
+  ],
+  "addressList": []
+}
