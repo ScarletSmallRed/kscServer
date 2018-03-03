@@ -22,6 +22,27 @@ var userSchema = new mongoose.Schema({
             "postCode": String,
             "tel": String
         }
+    ],
+    "orderList": [
+        {
+            "createDate": String,
+            "totalPrice": Number,
+            "addressInfo": {
+                "userName": String,
+                "streetName": String,
+                "postCode": String,
+                "tel": String
+            },
+            "goodsList": [
+                {
+                    "name": String,
+                    "price": Number,
+                    "categories": String,
+                    "num": Number,
+                    "checked": String
+                }
+            ]
+        }
     ]
 });
 

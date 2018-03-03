@@ -1,23 +1,61 @@
 {
-  "userId": "10086",
-  "userName": "user1",
-  "userPwd": "123456",
-  "orderList": [],
-  "cartList": [
+  "_id" : ObjectId("5a97f4e7919822fb7377ce53"),
+  "userId" : "10086",
+  "userName" : "user1",
+  "userPwd" : "123456",
+  "orderList" : [],
+  "cartList" : [
     {
-      "name": "鱼丸",
-      "price": 14,
-      "categories": "丸子组合",
-      "num": 10,
-      "checked": "1"
+      "name" : "鱼丸",
+      "price" : 14,
+      "categories" : "丸子组合",
+      "num" : 12,
+      "checked" : "1"
     },
     {
-      "name": "白萝卜",
-      "price": 10,
-      "categories": "蔬菜",
-      "num": 12,
-      "checked": "1"
+      "name" : "白萝卜",
+      "price" : 10,
+      "categories" : "蔬菜",
+      "num" : 12,
+      "checked" : "1"
     }
   ],
-  "addressList": []
+  "addressList" : [
+    {
+      "userName" : "Mike Jordan",
+      "streetName" : "Pasir Pajang Rd 1240",
+      "tel" : "123456",
+      "postCode" : "123456",
+      "_id" : ObjectId("5a97f50e383f6538a0030882")
+    },
+    {
+      "userName" : "Kobe Bryant",
+      "streetName" : "1231",
+      "tel" : "123",
+      "postCode" : "123",
+      "_id" : ObjectId("5a97f60090506d391df63314")
+    },
+    {
+      "userName" : "User",
+      "streetName" : "Jdkdf",
+      "tel" : "SHhdjdk",
+      "postCode" : "Shjdkdmf",
+      "_id" : ObjectId("5a98c228c056543946b2fb07")
+    },
+    {
+      "userName" : "Small Red1",
+      "streetName" : "China Town",
+      "tel" : "flfggjsnsnsnjjjk",
+      "postCode" : "1345678",
+      "_id" : ObjectId("5a98c296c056543946b2fb08")
+    },
+    {
+      "userName" : "Li Liang",
+      "streetName" : "Unknown Rd",
+      "tel" : "1370933995",
+      "postCode" : "353000",
+      "_id" : ObjectId("5a9914505a103747e484e37b")
+    }
+  ],
+  "__v" : 7
 }

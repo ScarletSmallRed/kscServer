@@ -152,7 +152,7 @@ router.post("/cartDel", function (req,res,next) {
 });
 
 //查询用户地址接口
-router.get("/addressList", function (req,res,next) {
+router.get("/infoList", function (req,res,next) {
     var userId = req.cookies.userId;
     User.findOne({userId:userId}, function (err,doc) {
         if(err){
@@ -165,7 +165,9 @@ router.get("/addressList", function (req,res,next) {
             res.json({
                 status:'0',
                 msg:'',
-                result:doc.addressList
+                result:{
+                    addressList: doc.addressList,
+                    orderList: doc.orderList}
             });
         }
     })
@@ -241,7 +243,7 @@ router.post('/addAddress', function (req, res, next) {
                     })
                 } else {
                     console.log('########## addressId' + addrUserName)
-                    console.log(userDoc)
+                    console.log(User)
                     User.update({"userId": userId, "addressList._id": mongooses.Types.ObjectId(addressId)}, {
                         'addressList.$.userName': addrUserName,
                         'addressList.$.streetName': addrString,
@@ -266,6 +268,40 @@ router.post('/addAddress', function (req, res, next) {
                     })
                 }
             }
+        }
+    })
+})
+
+router.post('/addOrder', function (req, res, next) {
+    let userId = req.cookies.userId,
+        order = req.body.order
+
+    console.log('##########3')
+    console.log(order)
+
+    User.findOne({'userId': userId},  function (err, userDoc) {
+        if (err) {
+            res.json({
+                status: '1',
+                msg: err.message,
+                result: ''
+            })
+        } else {
+            userDoc.orderList.push(order)
+            userDoc.save(function (err2) {
+                if (err2) {
+                    res.json({
+                        status: '1',
+                        msg: err2.message
+                    })
+                } else {
+                    res.json({
+                        status: '0',
+                        msg: '',
+                        result: 'suc'
+                    })
+                }
+            })
         }
     })
 })
